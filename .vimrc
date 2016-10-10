@@ -272,7 +272,9 @@ nmap <F8> :TagbarToggle<CR>
 "=====================================================
 " vim-template settings
 "=====================================================
-let g:templates_user_variables = lavrenko
+let g:user = "Aexandr Lavrenko"
+let g:email = "oleksandr.lavrenko@email"
+"let g:license = "Your-License"
 
 "vadv/vim-chef
 "autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
