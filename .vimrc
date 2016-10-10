@@ -59,6 +59,10 @@ NeoBundle 'vim-scripts/exim.vim'
 NeoBundle 'klen/python-mode'	        " Python mode (docs, refactor, lints, highlighting, run and ipdb and more)
 NeoBundle 'davidhalter/jedi-vim'	" Jedi-vim autocomplete plugin
 
+
+NeoBundle 'majutsushi/tagbar'		"TagBar
+NeoBundle 'aperezdc/vim-template'	"Template 
+
 call neobundle#end()
 
 " Required:
@@ -229,39 +233,46 @@ let g:pymode_rope = 0
 let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot = 0
 
-" документация
-let g:pymode_doc = 0
-let g:pymode_doc_key = 'K'
-" проверка кода
+"Documentation
+let g:pymode_doc = 1
+let g:pymode_doc_key = '<F1>'
+
+"Linting
 let g:pymode_lint = 1
 let g:pymode_lint_checker = "pyflakes,pep8"
 let g:pymode_lint_ignore="E501,W601,C0110"
-" провека кода после сохранения
+
+"Auto check on save
 let g:pymode_lint_write = 1
 
-" поддержка virtualenv
+"Support virtualenv
 let g:pymode_virtualenv = 1
 
-" установка breakpoints
+"Enable breakpoints plugin
 let g:pymode_breakpoint = 1
 let g:pymode_breakpoint_key = '<leader>b'
 
-" подстветка синтаксиса
+"Syntax highlighting
 let g:pymode_syntax = 1
 let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
-" отключить autofold по коду
+"Don't autofold code
 let g:pymode_folding = 0
 
-" возможность запускать код
+"Run the code
 let g:pymode_run = 0
 
+"=====================================================
+" TagBar settings
+"=====================================================
+nmap <F8> :TagbarToggle<CR>
 
-
-
-
+"=====================================================
+" vim-template settings
+"=====================================================
+let g:templates_user_variables = lavrenko
 
 "vadv/vim-chef
 "autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
