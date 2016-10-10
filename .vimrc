@@ -272,7 +272,7 @@ nmap <F8> :TagbarToggle<CR>
 "=====================================================
 " vim-template settings
 "=====================================================
-let g:user = "Aexandr Lavrenko"
+let g:user = "Alexandr Lavrenko"
 let g:email = "oleksandr.lavrenko@email"
 "let g:license = "Your-License"
 
