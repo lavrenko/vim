@@ -118,7 +118,8 @@ endif
 set backspace=indent,eol,start
 
 
-"set tabstop=4
+set tabstop=8
+set smarttab
 "set softtabstop=0
 "set shiftwidth=4
 "set expandtab
