@@ -162,8 +162,9 @@ set cmdheight=2
 "" Plugin
 "*****************************************************************************
 
-
-"" NERDTree configuration
+"=====================================================
+" NERDTree settings
+"=====================================================
 "let g:NERDTreeChDirMode=
 let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$','__pycache__']
 let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
@@ -175,6 +176,10 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <F2> :NERDTreeFind<CR>
 noremap <F3> :NERDTreeToggle<CR>
 
+"=====================================================
+" Molokai Color Scheme settings
+"=====================================================
+"
 "" Molokai Color Scheme
 let g:rehash256 = 1
 let g:molokai_original = 1
@@ -182,13 +187,17 @@ if !exists('g:not_finsh_neobundle')
 	colorscheme molokai
 endif
 
-""vim-airline
+"=====================================================
+" vim-airline settings
+"=====================================================
 "let g:airline_theme = 'powerlineish'
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 
-""syntastic
+"=====================================================
+" syntastic settings
+"=====================================================
 "let g:syntastic_always_populate_loc_list=1
 "let g:syntastic_error_symbol=...
 "let g:syntastic_warning_symbol=...
@@ -269,7 +278,7 @@ let g:pymode_run = 0
 " TagBar settings
 "=====================================================
 nmap <F8> :TagbarToggle<CR>
-
+let g:tagbar_width=26
 "=====================================================
 " vim-template settings
 "=====================================================
