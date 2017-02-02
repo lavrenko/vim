@@ -63,6 +63,9 @@ NeoBundle 'davidhalter/jedi-vim'	" Jedi-vim autocomplete plugin
 NeoBundle 'majutsushi/tagbar'		"TagBar
 NeoBundle 'aperezdc/vim-template'	"Template 
 
+" ansible
+NeoBundle 'chase/vim-ansible-yaml'
+NeoBundle 'pearofducks/ansible-vim'
 call neobundle#end()
 
 " Required:
@@ -287,5 +290,8 @@ let g:email = "oleksandr.lavrenko@email"
 "let g:license = "Your-License"
 
 "vadv/vim-chef
-"autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
+autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
 
+" ansible
+let g:ansible_options = {'ignore_blank_lines': 0}
+autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab
